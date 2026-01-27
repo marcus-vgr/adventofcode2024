@@ -2,12 +2,14 @@ mod utils;
 
 mod day1;
 mod day2;
+mod day3;
 
 fn main() {
 
     let days: Vec<fn()> = vec![ // Vector where each element is the function of the day
         day1::run,
         day2::run,
+        day3::run,
     ];
 
     let day: usize = std::env::args() 
