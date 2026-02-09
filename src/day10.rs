@@ -61,11 +61,11 @@ fn solve_trailhead(n: u8, row: usize, col: usize, map: &Vec<Vec<u8>>, trail_ends
 
 }
 
-fn size_unique_vector(V: Vec<(usize, usize)>) -> usize{
+fn size_unique_vector(vector: Vec<(usize, usize)>) -> usize{
 
     let mut set: Vec<(usize, usize)> = Vec::new();
 
-    for v in V{
+    for v in vector{
         if !set.contains(&v){
             set.push(v);
         }
